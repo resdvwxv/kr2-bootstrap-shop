@@ -13,3 +13,16 @@
   );
   min-height: 200px;
 }
+
+/* ---------- placeholder image (для карточек товара) ---------- */
+.placeholder-image {
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-img-top {
+  height: 180px;
+  object-fit: cover;
+}
