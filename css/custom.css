@@ -1,0 +1,15 @@
+/* custom.css
+   Местные стили поверх Bootstrap-сетки.
+*/
+
+/* ---------- placeholder box (для пустых баннеров) ---------- */
+.placeholder-box {
+  background: repeating-linear-gradient(
+    45deg,
+    #f0f0f0,
+    #f0f0f0 10px,
+    #e8e8e8 10px,
+    #e8e8e8 20px
+  );
+  min-height: 200px;
+}
