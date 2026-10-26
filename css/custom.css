@@ -32,3 +32,46 @@ body {
 .card-img-top {
   object-fit: contain;
 }
+
+/* ---------- текст поверх фото в карусели ---------- */
+.carousel-hero-text {
+  color: #fff;
+  text-shadow:
+    0 2px 10px rgba(0, 0, 0, 0.75),
+    0 1px 3px rgba(0, 0, 0, 0.9);
+}
+.carousel-hero-text .text-muted {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+/* ---------- ручная ширина карусели ---------- */
+.carousel-width {
+  width: 100%;
+  max-width: 40%;
+  margin-inline: auto;
+}
+
+/* ---------- рамка со скруглениями для фото товара ---------- */
+.img-frame {
+  /*padding: .5rem;*/
+  border: 1px solid #dee2e6;
+  border-radius: .75rem;
+  background: #fff;
+}
+.img-frame > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 1.0rem;
+  object-fit: contain;
+}
+
+/* Снять тень у бейджей внутри карусели */
+.carousel-hero-text .badge {
+  text-shadow: none;
+}
+
+.carousel-hero-text .badge,
+.carousel-hero-text .btn {
+  text-shadow: none;
+}

@@ -28,11 +28,12 @@
           </a>
         </div>
         <div class="col-12 col-lg-6">
-          <div class="p-5 bg-light border rounded text-center">
-            <p class="mb-0 text-muted">
-              Здесь может быть изображение, баннер или промо-блок.
-            </p>
-          </div>
+            <div class="border rounded-4 overflow-hidden bg-light">
+                <!--<p class="mb-0 text-muted">
+                  Здесь может быть изображение, баннер или промо-блок.
+                </p>-->
+                <img src="../images/witches.png" class="card-img-top" alt="Битубизес">
+            </div>
         </div>
       </div>
     </section>
@@ -67,67 +68,114 @@
       </div>
     </section>
 
-    <section class="container my-5" id="popular">
-      <div class="d-flex justify-content-between align-items-center mb-4">
-        <h2 class="mb-0">Популярные товары</h2>
-        <a class="btn btn-outline-primary" href="catalog.html">
-          Все товары
-        </a>
+    <section class="my-5" id="popular">
+
+      <!-- Заголовок остаётся в обычном container -->
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h2 class="mb-0">Популярные товары</h2>
+          <a class="btn btn-outline-primary" href="catalog.html">
+            Все товары
+          </a>
+        </div>
       </div>
-      <div class="row g-4">
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="border rounded h-100 p-4">
-            <span class="badge bg-success mb-3">Новинка</span>
-            <h3 class="h5">Битубизес</h3>
-            <p class="text-muted">
-              Базовый зазеркальный маркер надежности и личной эффективности, который обязан быть абсолютно у каждого.
-            </p>
-            <p class="fw-bold mb-3">В наличии</p>
-            <div class="d-flex gap-2">
-              <a class="btn btn-primary" href="products/bitubisas.html">
-                Подробнее
-              </a>
-              <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal" data-bs-target="#orderModal">
-                Заказать
-              </button>
-            </div>
+
+      <!-- Карусель — вне container, ширина задаётся .carousel-width -->
+      <div class="container-fluid px-0">
+        <div id="popularCarousel"
+             class="carousel slide carousel-dark carousel-width shadow-sm rounded-4 overflow-hidden"
+             data-bs-ride="carousel"
+             data-bs-interval="6000">
+
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#popularCarousel" data-bs-slide-to="0"
+                    class="active" aria-current="true" aria-label="Битубизес"></button>
+            <button type="button" data-bs-target="#popularCarousel" data-bs-slide-to="1"
+                    aria-label="Морковные пятки"></button>
+            <button type="button" data-bs-target="#popularCarousel" data-bs-slide-to="2"
+                    aria-label="Шапец"></button>
           </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="border rounded h-100 p-4">
-            <span class="badge bg-warning text-dark mb-3">Хит</span>
-            <h3 class="h5">Морковные пятки</h3>
-            <p class="text-muted">
-              Общепризнанная зазеркальная классика и изысканное гастрономическое открытие для званых ужинов.
-            </p>
-            <p class="fw-bold mb-3">В наличии</p>
-            <div class="d-flex gap-2">
-              <a class="btn btn-primary" href="products/morkovniy-piatky.html">
-                Подробнее
-              </a>
-              <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal" data-bs-target="#orderModal">
-                Заказать
-              </button>
+
+          <div class="carousel-inner">
+
+            <!-- Битубизес -->
+            <div class="carousel-item active">
+              <div class="d-flex flex-column justify-content-end p-4 p-md-5"
+                   style="min-height: 520px; background: #e9ecef url('images/Bitubisas.png') bottom center/cover no-repeat;">
+                <div class="carousel-hero-text" style="max-width: 560px;">
+                  <span class="badge bg-success mb-2">Новинка</span>
+                  <h3 class="h4 mb-2">Битубизес</h3>
+                  <p class="mb-3">
+                    Базовый зазеркальный маркер надежности и личной эффективности,
+                    который обязан быть абсолютно у каждого.
+                  </p>
+                  <div class="d-flex gap-2">
+                    <a class="btn btn-primary" href="products/bitubisas.html">Подробнее</a>
+                    <button class="btn btn-outline-light" type="button"
+                            data-bs-toggle="modal" data-bs-target="#orderModal">
+                      Заказать
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="border rounded h-100 p-4">
-            <span class="badge bg-danger mb-3">Скидка</span>
-            <h3 class="h5">Шапец</h3>
-            <p class="text-muted">
-              Больше чем просто головной убор — абсолютный символ стиля и весомого статуса в Сумеречной роще.
-            </p>
-            <p class="fw-bold mb-3">В наличии</p>
-            <div class="d-flex gap-2">
-              <a class="btn btn-primary" href="products/shapec.html">
-                Подробнее
-              </a>
-              <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal" data-bs-target="#orderModal">
-                Заказать
-              </button>
+
+            <!-- Морковные пятки -->
+            <div class="carousel-item">
+              <div class="d-flex flex-column justify-content-end p-4 p-md-5"
+                   style="min-height: 520px; background: #e9ecef url('images/Morkovniy_piatky.png') bottom center/cover no-repeat;">
+                <div class="carousel-hero-text" style="max-width: 560px;">
+                  <span class="badge bg-warning text-dark mb-2">Хит</span>
+                  <h3 class="h4 mb-2">Морковные пятки</h3>
+                  <p class="mb-3">
+                    Общепризнанная зазеркальная классика и изысканное гастрономическое
+                    открытие для званых ужинов.
+                  </p>
+                  <div class="d-flex gap-2">
+                    <a class="btn btn-primary" href="products/morkovniy-piatky.html">Подробнее</a>
+                    <button class="btn btn-outline-light" type="button"
+                            data-bs-toggle="modal" data-bs-target="#orderModal">
+                      Заказать
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
+
+            <!-- Шапец -->
+            <div class="carousel-item">
+              <div class="d-flex flex-column justify-content-end p-4 p-md-5"
+                   style="min-height: 520px; background: #e9ecef url('images/Shapec.png') bottom center/cover no-repeat;">
+                <div class="carousel-hero-text" style="max-width: 560px;">
+                  <span class="badge bg-danger mb-2">Скидка</span>
+                  <h3 class="h4 mb-2">Шапец</h3>
+                  <p class="mb-3">
+                    Больше чем просто головной убор — абсолютный символ стиля
+                    и весомого статуса в Сумеречной роще.
+                  </p>
+                  <div class="d-flex gap-2">
+                    <a class="btn btn-primary" href="products/shapec.html">Подробнее</a>
+                    <button class="btn btn-outline-light" type="button"
+                            data-bs-toggle="modal" data-bs-target="#orderModal">
+                      Заказать
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
+
+          <button class="carousel-control-prev" type="button"
+                  data-bs-target="#popularCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Предыдущий</span>
+          </button>
+          <button class="carousel-control-next" type="button"
+                  data-bs-target="#popularCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Следующий</span>
+          </button>
         </div>
       </div>
     </section>
