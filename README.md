@@ -49,8 +49,6 @@
 
 ## Подключение Bootstrap
 
-В проекте Bootstrap подключён локально. Файлы фреймворка размещены в папке `vendor/bootstrap/`.
-
 Используются:
 - `vendor/bootstrap/css/bootstrap.min.css`;
 - `vendor/bootstrap/js/bootstrap.bundle.min.js`.
